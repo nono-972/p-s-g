@@ -1,0 +1,39 @@
+body{
+    background-color: blue;
+}
+h1{
+  text-align: center;
+  background-color: pink;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+.luis{
+    width: 1300px;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    font-family: arial black;
+    justify-content: center;
+}
+.National{
+background-color: white;
+}
+.Europe{
+background-color: red;
+}
+.international{
+background-color: white;
+}
+h2{
+    text-align: center;
+}
+img{
+ border: 5px solid black;
+  width: 440px;
+  padding: 10px;
+  background-color: #F7CF05;
+}
+div{
+    text-align: center;
+}
