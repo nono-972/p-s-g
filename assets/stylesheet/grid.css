@@ -1,5 +1,15 @@
-.National1{
-    display: grid;
-    grid-template-columns: repeat() ;
-    grid-template-rows:repeat() ;
+article table{
+ width: 100%;
+}
+
+.National1 td.score{
+    background: none;
+    border: none;
+    width: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+td.score img{
+    width: 50px;
 }
