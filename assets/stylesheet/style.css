@@ -19,12 +19,6 @@ p{
 .National1{
 background-color: white;
 }
-.Europe1{
-background-color: red;
-}
-.international1{
-background-color: white;
-}
 h2{
     text-align: center;
 }
@@ -33,6 +27,17 @@ img{
   width: 440px;
   padding: 10px;
   background-color: #F7CF05;
+}
+.Europe1{
+background-color: red;
+}
+.container {
+display: flex;
+justify-content: center;
+gap: 5px;
+}
+.international1{
+background-color: white;
 }
 div{
     text-align: center;
@@ -46,11 +51,6 @@ a{
 }
 .UEFA{
     width: 270px;
-}
-.container {
-display: flex;
-justify-content: center;
-gap: 5px;
 }
 .Wok {
     width: 25%;
