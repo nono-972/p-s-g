@@ -53,8 +53,8 @@
   --bs-form-invalid-color: #ea868f;
   --bs-form-invalid-border-color: #ea868f;
 }
-body{
-  background-color: var(--bs-primary-border-subtle);
+html{
+  background-color: var(#084298);
 }
 h1{
   text-align: center;
@@ -106,4 +106,13 @@ a{
 .etoile{
     display: flex;
     justify-content: center;
+}
+
+small{
+    display: flex;
+    justify-content: center;
+}
+
+sup {
+    margin-top: 7px;
 }
