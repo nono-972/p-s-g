@@ -114,5 +114,18 @@ small{
 }
 
 sup {
-    margin-top: 7px;
+    margin-top: 9px;
+}
+
+td {
+text-align: center;
+vertical-align: top;
+margin-right: 5px;
+margin-left: 5px;
+}
+
+.logo {
+    background-color: white;
+    border: none;
+    width: 7vh;
 }
