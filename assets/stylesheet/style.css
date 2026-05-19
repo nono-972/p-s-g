@@ -117,15 +117,31 @@ sup {
     margin-top: 9px;
 }
 
+table{
+    margin: auto;
+width: 100%;
+}
+
+th{
+    width: 50%;
+}
+
 td {
 text-align: center;
-vertical-align: top;
-margin-right: 5px;
+margin-right: 2px;
 margin-left: 5px;
+width: 100px;
 }
 
 .logo {
     background-color: white;
     border: none;
-    width: 6.5vh;
+    width: 8.5vh;
+}
+
+.trophées {
+    background-color: white;
+    border: none;
+    width: 15vh;
+
 }
