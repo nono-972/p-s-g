@@ -1,6 +1,6 @@
 <?php
 
-$Paris = "PSG";
+$Paris = "psg";
 
 $cdf = [
  "Parcours" => [
@@ -9,7 +9,7 @@ $cdf = [
  "Stade Briochin",
  "Le mans",
  "Dunkerque",
- "Reims"
+ "Stade de Reims"
  ],
 
 ];
@@ -35,43 +35,43 @@ $tropheedeschampions = [
 
 $ligue1 = [
  "domicile" => [
-    "Toulouse",
-    "Lyon",
-    "Marseille",
-    "Saint-Etienne",
-    "Le Havre",
-    "Monaco", 
-    "Lille",
-    "Stade Rennais",
-    "Stade Reims",
-    "Nice",
-    "Nantes",
-    "Brest", 
-    "Montpellier",
-    "Lens",
-    "Strasbourg",
-    "Auxerre",
-    "Angers",
+   "Toulouse",
+   "Lyon",
+   "Marseille",
+   "Saint-Etienne",
+   "Le Havre",
+   "Monaco", 
+   "Lille",
+   "Stade Rennais",
+   "Stade Reims",
+   "Nice",
+   "Nantes",
+   "Brest", 
+   "Montpellier",
+   "Lens",
+   "Strasbourg",
+   "Auxerre",
+   "Angers"
  ],
 
  "exterieur" => [
-    "Toulouse",
-    "Lyon",
-    "Marseille",
-    "Saint-Etienne",
-    "Le Havre",
-    "Monaco", 
-    "Lille",
-    "Stade Rennais",
-    "Stade Reims",
-    "Nice",
-    "Nantes",
-    "Brest", 
-    "Montpellier",
-    "Lens",
-    "Strasbourg",
-    "Auxerre",
-    "Angers",
+   "Toulouse",
+   "Lyon",
+   "Marseille",
+   "Saint-Etienne",
+   "Le Havre",
+   "Monaco", 
+   "Lille",
+   "Stade Rennais",
+   "Stade Reims",
+   "Nice",
+   "Nantes",
+   "Brest", 
+   "Montpellier",
+   "Lens",
+   "Strasbourg",
+   "Auxerre",
+   "Angers"
  ],
 
 ];
@@ -132,13 +132,14 @@ $liguedeschampions = [
   "Brest",
   "Liverpool",
   "Aston Villa",
-  "Arsenal",
+  "Arsenal"
+
  ],
 
   "exterieur" => [
-  "",
-  "",
-  "",
+  "Stutgart",
+  "Salzburg",
+  "Bayer Munich",
   "Arsenal",
   "Brest",
   "Liverpool",
