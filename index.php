@@ -27,8 +27,8 @@ include 'header.php'
 
         <tbody>
 
-         <?php for ($i=0; $i < ; $i++) { 
-          # code...
+         <?php foreach ($variable as $key => $value) {
+          
          }
          ?>
           <tr>
@@ -56,8 +56,8 @@ include 'header.php'
 
        <tbody>
          <tr>
-            <td></td>
-            <td></td>
+            <td><?= $Paris = "psg" ?> - </td>
+            <td> - <?= $Paris = "psg" ?></td>
          </tr>
        </tbody>
       </div>
@@ -75,15 +75,15 @@ include 'header.php'
         <table>
           <thead>
             <tr>
-              <th></th>
-              <th></th>
+              <th>domicile</th>
+              <th>extérieur</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td></td>
-              <td></td>
+            <td><?= $Paris = "psg" ?> - </td>
+            <td> - <?= $Paris = "psg" ?></td>
             </tr>
           </tbody>
 
@@ -94,15 +94,15 @@ include 'header.php'
         <table>
           <thead>
             <tr>
-              <th></th>
-              <th></th>
+              <th>domicile</th>
+              <th>extérieur</th>
             </tr>
           </thead>
         
           <tbody>
             <tr>
-              <td></td>
-              <td></td>
+            <td><?= $Paris = "psg" ?> - </td>
+            <td> - <?= $Paris = "psg" ?></td>
             </tr>
           </tbody>
         </table>
@@ -121,8 +121,8 @@ include 'header.php'
 
           <tbody>
             <tr>
-              <td></td>
-              <td></td>
+            <td><?= $Paris = "psg" ?> - </td>
+            <td> - <?= $Paris = "psg" ?></td>
             </tr>
           </tbody>
         </table>
