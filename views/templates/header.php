@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/stylesheet/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">   
+     <title>Document</title>
 </head>
 <body>
-    
-</body>
-</html>
+    <header>
+        <h1>bonjour Noham</h1>
+
+    </header>
