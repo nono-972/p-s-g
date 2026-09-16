@@ -11,7 +11,7 @@ class joueur {
     public $nationalité;
     public $effectif_id;
 
-    public function __construct($i, $n, $p, $a, $po, $ps, $nat, $e) {
+    public function __construct($i, $n, $p, $a, $po, $ps, $nat, $ef) {
         $this-> id = $i;
         $this-> nom = $n;
         $this-> prenom = $p;
@@ -19,6 +19,6 @@ class joueur {
         $this-> poste = $po;
         $this-> poste_secondaire = $ps;
         $this-> nationalité = $nat;
-        $this-> effectif_id = $e;
+        $this-> effectif_id = $ef;
     }
 }
