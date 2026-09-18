@@ -11,8 +11,8 @@ class RecompenseController {
         TrophéeRepository $tr
     ) {
 
-     $this-> recompenseRepository = $r ;
-     $this-> trophéeRepository = $tr ;
+     $this->recompenseRepository = $r ;
+     $this->trophéeRepository = $tr ;
     }
 
 }

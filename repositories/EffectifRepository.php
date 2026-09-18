@@ -17,5 +17,16 @@ class EffectifRepository {
         $stmt = $this->pdo->query($sql);
 
       $effectifs = [];  
+
+
+      while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $effectifs[] = new Effectif(
+            $row["id"],
+            $row["nom"]
+            );
+        }
+     return $effectifs;
     }
+
+
 }

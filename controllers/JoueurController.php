@@ -10,8 +10,8 @@ class JoueurController {
      JoueurRepository $j
 
     ){
-     $this-> effectifRepository = $ef ;
-     $this-> joueurRepository = $j ;
+     $this->effectifRepository = $ef ;
+     $this->joueurRepository = $j ;
     }
 
 }
