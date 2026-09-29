@@ -1,4 +1,6 @@
-<?php require "views/templates/header.php"; ?>
+<?php 
+require "templates/header.php"; 
+?>
 
 <main>
 
@@ -9,7 +11,7 @@
         <label for="">nom :</label>
         <input type="text" name="" id="">
 
-        <label for="">nom :</label>
+        <label for="">année :</label>
         <input type="text" name="" id="">
         
         <button type="submit"></button>
@@ -17,5 +19,5 @@
 </main>
 
 <?php 
-require "views/templates/footer.php"; 
+require "templates/footer.php"; 
 ?>

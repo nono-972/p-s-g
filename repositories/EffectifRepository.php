@@ -25,6 +25,7 @@ class EffectifRepository {
             $row["nom"]
             );
         }
+
      return $effectifs;
     }
 

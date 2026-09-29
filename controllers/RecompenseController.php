@@ -15,4 +15,11 @@ class RecompenseController {
      $this->trophéeRepository = $tr ;
     }
 
+    public function createRecompense() 
+    {
+        $joueurs = $this->recompenseRepository->findAll(); 
+
+        require_once "views/formrecompense.php";
+
+    }
 }

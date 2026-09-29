@@ -1,6 +1,7 @@
 <?php
 
-class TrophéeRepository{
+class TrophéeRepository
+{
     private PDO $pdo;
 
     public function __construct(PDO $pdo)
@@ -8,25 +9,23 @@ class TrophéeRepository{
         $this->pdo = $pdo;
     }
 
-    public function findAll(): array 
+    public function findAll(): array
     {
-    $sql = "
+        $sql = "
             SELECT * FROM trophée;
         ";
 
-       $stmt = $this->pdo->query($sql); 
-  
-       $trophées = [];  
+        $stmt = $this->pdo->query($sql);
 
+        $trophées = [];
 
-     while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-          $trophées[] = new Trophée(
-            $row["id"],
-            $row["nom"],
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $trophées[] = new Trophée(
+                $row["id"],
+                $row["nom"]
             );
-       }
-     return  $trophées;
+        }
 
+        return $trophées;
     }
- 
 }

@@ -10,13 +10,13 @@ class PositionRepository{
 
     public function findAll(): array 
     {
-               $sql = "
+            $sql = "
             SELECT 
-                position.id,
-                position.nom,
-                position.nom_secondaire,
-                position.position_effectif
-            FROM position;
+            position.id,
+            position.nom,
+            position.nom_secondaire,
+            position.position_effectif
+        FROM position;
         ";
 
         $stmt = $this->pdo->query($sql);
@@ -28,8 +28,8 @@ class PositionRepository{
             $positions[] = new Position(
                 $row["id"],
                 $row["nom"],
-                $row["nom_secondaire "],
-                $row["position_effectif"],
+                $row["nom_secondaire"],
+                $row["position_effectif"]
             );
         }
         return $positions;

@@ -10,13 +10,13 @@ class RecompenseRepository{
 
     public function findAll(): array 
     {
-               $sql = "
-            SELECT 
-                recompense.id,
-                recompense.nom,
-                recompense.année,
-                recompense.trophees_id
-            FROM recompense;
+      $sql = "
+         SELECT 
+            recompense.id,
+            recompense.nom,
+            recompense.annee,
+            recompense.trophees_id
+        FROM recompense;
         ";
 
         $stmt = $this->pdo->query($sql);
@@ -28,8 +28,8 @@ class RecompenseRepository{
             $recompenses[] = new Recompense(
                 $row["id"],
                 $row["nom"],
-                $row["année"],
-                $row["trophees_id"],
+                $row["annee"],
+                $row["trophees_id"]
             );
         }
         return $recompenses;

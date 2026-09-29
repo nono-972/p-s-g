@@ -6,6 +6,7 @@ spl_autoload_register(function($class) {
         "models",
         "controllers",
         "repositories",
+        "views",
     ];
 
     foreach ($folders as $folder) {

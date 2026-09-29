@@ -1,4 +1,4 @@
-<?php require "views/templates/header.php"; ?>
+<?php require "templates/header.php"; ?>
 
 <main>
 
@@ -35,5 +35,5 @@
 </main>
 
 <?php 
-require "views/templates/footer.php"; 
+require "templates/footer.php"; 
 ?>

@@ -7,9 +7,9 @@ class recompense {
     public $annee;
     public $trophée_id;
 
-    public function __construct($i, $n, $a, $t) {
+    public function __construct($i, $nom, $a, $t) {
         $this-> id = $i;
-        $this-> nom = $n;
+        $this-> nom = $nom;
         $this-> annee = $a;
         $this-> trophée_id = $t;
     }
