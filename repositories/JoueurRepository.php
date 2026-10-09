@@ -18,8 +18,8 @@ class JoueurRepository
                 joueur.nom,
                 joueur.age,
                 joueur.poste,
-                joueur.`poste secondaire`,
-                joueur.`nationalité`,
+                joueur.poste_secondaire,
+                joueur.nationalité,
                 joueur.effectif_id
             FROM joueur;
         ";
@@ -29,13 +29,13 @@ class JoueurRepository
         $joueurs = [];
 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $joueurs[] = new Joueur(
+            $joueurs[] = new joueur(
                 $row["id"],
                 $row["prenom"],
                 $row["nom"],
                 $row["age"],
                 $row["poste"],
-                $row["poste secondaire"],
+                $row["poste_secondaire"],
                 $row["nationalité"],
                 $row["effectif_id"]
             );
@@ -43,4 +43,32 @@ class JoueurRepository
 
         return $joueurs;
     }
+
+
+   public function findById(int $id)
+    {
+        $sql = "
+            SELECT * FROM joueur WHERE id=:id;
+        ";
+
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([
+            "id" => $id
+        ]);
+
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $joueur = new joueur(
+                $row["id"],
+                $row["prenom"],
+                $row["nom"],
+                $row["age"],
+                $row["poste"],
+                $row["poste_secondaire"],
+                $row["nationalité"],
+                $row["effectif_id"]
+            );
+        }
+        return $joueur;
+    }
+
 }

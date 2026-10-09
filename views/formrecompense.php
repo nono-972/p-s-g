@@ -4,17 +4,17 @@ require "templates/header.php";
 
 <main>
 
-    <h2></h2>
+    <h2>Formulaire de recompense</h2>
     
     <form action="" method="post">
 
-        <label for="">nom :</label>
-        <input type="text" name="" id="">
+        <label for="nom">nom :</label>
+        <input type="text" name="nom" id="nom">
 
-        <label for="">année :</label>
-        <input type="text" name="" id="">
+        <label for="annee">année :</label>
+        <input type="text" name="annee" id="annee">
         
-        <button type="submit"></button>
+        <button type="submit">valider</button>
     </form>
 </main>
 

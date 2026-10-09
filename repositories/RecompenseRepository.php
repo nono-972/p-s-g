@@ -25,7 +25,7 @@ class RecompenseRepository{
 
 
         while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $recompenses[] = new Recompense(
+            $recompenses[] = new recompense(
                 $row["id"],
                 $row["nom"],
                 $row["annee"],
@@ -34,6 +34,29 @@ class RecompenseRepository{
         }
         return $recompenses;
   
+    }
+
+    
+    public function findById(int $id)
+    {
+        $sql = "
+            SELECT * FROM recompense WHERE id=:id;
+        ";
+
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([
+            "id" => $id
+        ]);
+
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $recompense = new recompense(
+                $row["id"],
+                $row["nom"],
+                $row["annee"],
+                $row["trophees_id"]
+            );
+        }
+        return $recompense;
     }
 
 }

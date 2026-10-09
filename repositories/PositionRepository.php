@@ -25,7 +25,7 @@ class PositionRepository{
 
 
         while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $positions[] = new Position(
+            $positions[] = new position(
                 $row["id"],
                 $row["nom"],
                 $row["nom_secondaire"],
@@ -34,6 +34,29 @@ class PositionRepository{
         }
         return $positions;
   
+    }
+
+
+    public function findById(int $id)
+    {
+        $sql = "
+            SELECT * FROM position WHERE id=:id;
+        ";
+
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([
+            "id" => $id
+        ]);
+
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $position = new position(
+                $row["id"],
+                $row["nom"],
+                $row["nom_secondaire"],
+                $row["position_effectif"]
+            );
+        }
+        return $position;
     }
 
 }

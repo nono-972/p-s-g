@@ -28,4 +28,27 @@ class TrophéeRepository
 
         return $trophées;
     }
+
+
+    public function findById(int $id)
+    {
+        $sql = "
+            SELECT * FROM trophée WHERE id=:id;
+        ";
+
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([
+            "id" => $id
+        ]);
+
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $trophée = new Trophée(
+                $row["id"],
+                $row["nom"],
+
+            );
+        }
+        return $trophée;
+    }
+
 }

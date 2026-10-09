@@ -1,5 +1,6 @@
 <?php
 
+
 require_once "config/database.php";
 require_once "autoload.php";
 
@@ -14,8 +15,8 @@ $controller = [
     $effectifRepository,
     $joueurRepository,
     $positionRepository
-   
- ),
+    ),
+
 
  new RecompenseController(
     $recompenseRepository,

@@ -14,7 +14,7 @@
         <input type="text" name="poste_secondaire" id="poste_secondaire">
     
     
-        <button type="submit"></button>
+        <button type="submit">Ajouter</button>
     </form>
 </main>
 

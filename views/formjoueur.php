@@ -30,7 +30,7 @@
         <input type="text" name="nationalité" id="nationalité">
 
 
-        <button type="submit"></button>
+        <button type="submit">Ajouter</button>
     </form>
 </main>
 

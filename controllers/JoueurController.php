@@ -18,15 +18,40 @@ class JoueurController {
 
     }
 
-        public function createJoueur() : void
-    {
-        $joueurs = $this->joueurRepository->findAll(); 
 
-        require_once "views/formjoueur.php";
+    public function createJoueur() : void
+    {
+      $joueurs = $this->joueurRepository->findAll(); 
+
+      if($_SERVER["REQUEST_METHOD"] === "POST"){
+        $nom = $_POST["nom"];
+        $prenom = $_POST["prenom"];
+        $age = $_POST["age"];
+        $poste = $_POST["poste"];
+        $poste_secondaire = $_POST["poste_secondaire"];
+        $nationalité = $_POST["nationalité"];
+        $effectif_id = $_POST["effectif"];
+
+        $joueur = new joueur(
+          0,
+          $nom,
+          $prenom,
+          $age,
+          $poste,
+          $poste_secondaire, 
+          $nationalité,  
+          $effectif_id
+        );
+      }
+        $this->joueurRepository->create($joueurs);
+        header("location: index.php");
+        exit;
+      
+      require __DIR__ . "/views/formJoueur.php";
     }
 
     
-    public function createPosition()
+    public function createPosition() : void
     {
         $positions = $this->positionRepository->findAll(); 
 
