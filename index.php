@@ -11,7 +11,7 @@ $tropheeRepository = new TrophéeRepository($pdo);
 $positionRepository = new PositionRepository($pdo);
 
 $controller = [
-    new JoueurController(
+    new EffectifController(
     $effectifRepository,
     $joueurRepository,
     $positionRepository

@@ -15,7 +15,7 @@ class PositionRepository{
             position.id,
             position.nom,
             position.nom_secondaire,
-            position.position_effectif
+            position.
         FROM position;
         ";
 
@@ -29,7 +29,7 @@ class PositionRepository{
                 $row["id"],
                 $row["nom"],
                 $row["nom_secondaire"],
-                $row["position_effectif"]
+                $row[""]
             );
         }
         return $positions;
@@ -53,7 +53,7 @@ class PositionRepository{
                 $row["id"],
                 $row["nom"],
                 $row["nom_secondaire"],
-                $row["position_effectif"]
+                $row[""]
             );
         }
         return $position;

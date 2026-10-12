@@ -1,7 +1,7 @@
 <?php 
 
 
-class JoueurController {
+class EffectifController {
     private EffectifRepository $effectifRepository;
     private JoueurRepository $joueurRepository;
     private PositionRepository $positionRepository;
