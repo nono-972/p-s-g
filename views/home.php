@@ -12,16 +12,16 @@
         </tr>
     </thead>
     <tbody>
+        <?php foreach($joueurs as $joueur): ?>
         <tr>
-          <?php  foreach($joueurs as $joueur): ?>
-               <td><?= $joueur->nom ?></td>
-               <td><?= $joueur->prenom ?></td>
-               <td><?= $joueur->age ?></td>
-               <td><?= $joueur->poste ?></td>
-               <td><?= $joueur->poste_secondaire ?></td>
-               <td><?= $joueur->nationalité ?></td>
-               <?php endforeach; ?>
-        </tr>
+            <td><?= $joueur->nom ?></td>
+            <td><?= $joueur->prenom ?></td>
+            <td><?= $joueur->age ?></td>
+            <td><?= $joueur->poste ?></td>
+            <td><?= $joueur->poste_secondaire ?></td>
+            <td><?= $joueur->nationalité ?></td>
+       </tr>
+     <?php endforeach; ?>
     </tbody>
 </table>
 </main>
